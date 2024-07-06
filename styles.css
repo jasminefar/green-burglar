@@ -1,60 +1,54 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+
+.mouth {
+    width: 50px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
 }
 
-.zombie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.scar {
+    width: 2px;
+    height: 30px;
+    background-color: #8B4513;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    transform: rotate(45deg);
 }
 
-.head {
-    width: 100px;
+.body {
+    width: 80px;
     height: 120px;
-    background-color: #7ec850;
-    border-radius: 100%;
+    background-color: #2f3131;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.hair {
-    width: 100%;
-    height: 80px;
-    background-color: #2f3131;
-    border-radius: 50% 50% 0 0;
-    position: absolute;
-    top: 0;
-}
-
-.bangs {
-    width: 60px;
-    height: 20px;
-    background-color: #2f3131;
-    border-radius: 0 0 30px 30px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-.eyes {
+.arms {
     display: flex;
-    justify-content: space-around;
-    width: 60%;
+    justify-content: space-between;
+    width: 120%;
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 0px;
+    left: -10%;
 }
 
-.eye {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 50%;
+.arm {
+    width: 30px;
+    height: 60px;
+    background-color: #7ec850;
+    border-radius: 10px;
     position: relative;
+}
+
+.arm.left {
+    transform: rotate(-50deg);
+}
+
+.arm.right {
+    transform: rotate(90deg);
 }
